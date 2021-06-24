@@ -2,7 +2,8 @@
 // création d'une map simple CRS
 var map = L.map('map', {
     crs: L.CRS.Simple,
-    minZoom: -3,
+    minZoom: -4,
+    center: L.latLng(539, 881),
 
 });
 
@@ -24,12 +25,13 @@ var maya = L.latLng(739, 623);
 var grec = L.latLng(400, 800);
 var viking = L.latLng(700, 850);
 
-var circle = L.circle([545, 880], {
-    color: 'red',
-    fillColor: '#f03',
-    fillOpacity: 0.5,
-    radius: 120
-}).addTo(map).bindPopup('<h2> Le cercle des montagnes Rampart');
+
+// var circle = L.circle([545, 880], {
+//     color: 'red',
+//     fillColor: '#f03',
+//     fillOpacity: 0.5,
+//     radius: 120
+// }).addTo(map).bindPopup('<h2> Le cercle des montagnes Rampart');
 
 
 // test
