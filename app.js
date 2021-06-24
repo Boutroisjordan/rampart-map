@@ -34,29 +34,29 @@ var circle = L.circle([545, 880], {
 
 // test
 
-var map = L.map('map').setView([48.86, 2.35], 11);
+// var map = L.map('map').setView([48.86, 2.35], 11);
 
-L.Control.MyControl = L.Control.extend({
-    onAdd: function (map) {
-        var el = L.DomUtil.create('div', 'leaflet-bar my-control');
+// L.Control.MyControl = L.Control.extend({
+//     onAdd: function (map) {
+//         var el = L.DomUtil.create('div', 'leaflet-bar my-control');
 
-        el.innerHTML = 'My Control';
+//         el.innerHTML = 'My Control';
 
-        return el;
-    },
+//         return el;
+//     },
 
-    onRemove: function (map) {
-        // Nothing to do here
-    }
-});
+//     onRemove: function (map) {
+//         // Nothing to do here
+//     }
+// });
 
-L.control.myControl = function (opts) {
-    return new L.Control.MyControl(opts);
-}
+// L.control.myControl = function (opts) {
+//     return new L.Control.MyControl(opts);
+// }
 
-L.control.myControl({
-    position: 'topright'
-}).addTo(map);
+// L.control.myControl({
+//     position: 'topright'
+// }).addTo(map);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
