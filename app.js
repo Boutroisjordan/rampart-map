@@ -26,12 +26,12 @@ var grec = L.latLng(400, 800);
 var viking = L.latLng(700, 850);
 
 
-// var circle = L.circle([545, 880], {
-//     color: 'red',
-//     fillColor: '#f03',
-//     fillOpacity: 0.5,
-//     radius: 120
-// }).addTo(map).bindPopup('<h2> Le cercle des montagnes Rampart');
+var circle = L.circle([545, 880], {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5,
+    radius: 120
+}).addTo(map).bindPopup('<h2> Le cercle des montagnes Rampart');
 
 
 // test
